@@ -92,4 +92,4 @@ local list = {
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
-return true
+return table.find(list, tostring(player.UserId)) ~= nil
